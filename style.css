@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: Verdana, Tahoma, sans-serif;
+    overflow-x: hidden;
+    cursor: pointer;
+    background:linear-gradient(to right top, #1f2021, #313435, #454949, #5c605d, #757671);;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+i{
+    color: white;
+    font-size: 2rem;
+}
+header{
+    position: relative;
+    background-image:linear-gradient(rgba(22, 22, 22, 0.459),rgba(0, 0, 0, 0.705)),url('hd1.jpeg');
+    height: 99vh;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+}
+.nav-container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+}
+.logo{
+   height: 5rem;
+   width: 10rem;
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    letter-spacing: 0.12em;
+    padding: 1rem;
+    margin-left: 1rem;
+    
+}
+.nav-menu a:hover,.nav-menu i:hover{
+    color: yellow;
+}
+#bar{
+    color: white;
+    float:right;
+    padding: 0.5rem; 
+     display: none;
+}
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+.main-container h1{
+    font-size: 4rem;
+    padding: 0.5rem;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 0.11em;
+    font-weight: 400;
+ }
+
+ .main-container p{
+    font-size: 1.7rem;
+    padding: 0.5rem;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 0.11em;
+    font-weight: lighter;
+ }
+.main-container{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-70%, -45%);
+}
+.sec{
+    margin: 5rem;
+    padding: 4rem;
+   background:linear-gradient(to right, #334d50, #a5a491);
+   
+    
+}
+.label{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+.label div{
+    width: 11%;
+    height: 20%;
+    border: 1px groove rgba(138, 17, 83, 0.904);;
+    text-align: center;
+    border-radius: 50%;
+    outline: none;
+    padding: 2rem;
+}
+.label div:hover{
+    border:1.2px groove white;
+}
+.label p{
+    color: yellow;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    text-transform: capitalize;
+    letter-spacing: 00.12em;
+    font-weight: lighter;
+    
+}
+.label p:hover{
+    color: white;
+}
+
+.label i{
+   color:  rgba(138, 17, 83, 0.904);
+   font-size: 2rem;
+}
+.label i:hover{
+    color: white;
+}
+.num{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+/* ##################card styling################### */
+.event-sec{
+    margin: 5rem;
+    padding:2rem ;
+    background: linear-gradient(to right, #334d50, #cbcaa5);
+}
+.ev-head{
+    display: flex;
+    justify-content: space-between;
+}
+.ev-head h1{
+    text-transform: capitalize;
+    padding: 0.5rem;
+    color: white;
+}
+.bdr::after{
+    content: '';
+    display: block;
+    padding: 0.5rem;
+    border-bottom: 3px solid black;
+    width: 25%;
+
+}
+.ev-head p{
+    font-size: 1.7rem;
+    color:white;
+    text-transform: capitalize;
+    font-weight: 400;
+} 
+.ev-head p:hover{
+    color: yellow;
+}
+
+.events{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    margin: 2rem;
+    box-shadow: 4px -4px rgba(138, 17, 83, 0.904);
+}
+.card img{
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+}
+.ticket{
+    display: inline-block;
+    margin-left: 5rem;
+}
+.ticket:hover{
+    color:rgba(235, 52, 153, 0.904); ;
+}
+
+.ind{
+    background-color: yellow;
+    width: 6rem;
+    text-transform: capitalize;
+    text-align: center;
+    color: brown;
+    padding: 0.3rem auto;
+}
+.ind1{
+    background-color: yellow;
+    width: 4rem;
+    text-transform: capitalize;
+    text-align: center;
+    color: brown;
+    padding: 0.3rem auto;
+}
+.card-body{
+    width: 100%;
+    height:auto;
+    background-color: black;
+    color: blanchedalmond;
+}
+
+/* #################review############## */
+.review{
+    margin: 5rem;
+    padding:2rem ;
+    background: linear-gradient(to right, #334d50, #cbcaa5);
+
+}
+.rw-head{
+    display: flex;
+    justify-content: space-between;
+}
+.rw-head h1{
+    text-transform: capitalize;
+    padding: 0.5rem;
+    color: white;
+}
+
+.rw-head p{
+    font-size: 1.7rem;
+    color:white;
+    font-weight: 400;
+}
+
+
+.review-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.review-container .img{
+    width: 6rem;
+    margin: 1rem;
+    height: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.review-container .card{
+    background: black;
+    border: 1px solid yellow;
+    border-radius: 2rem;
+    box-shadow: 4px -4px rgb(207, 12, 77);
+   
+}
+.review-container .card span{
+    color: white;
+    display: block;
+    margin-top: 2rem;
+    text-transform: capitalize;
+    letter-spacing: 0.12em;
+}
+.review-container .card .flag{
+    width:27px;
+    height:14px;
+    margin-top:25px;
+    margin-right:20px;
+    margin-left:-55px;
+}
+
+.review-container .card .profile{
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+/* #############################footer####################### */
+.footer{
+    padding: 0.5rem;
+    background-color:rgb(71, 70, 70);
+    text-align: center;
+    font-size: 1.7rem;
+    color: rgb(190,190,190);
+    text-transform: capitalize;
+}
+.footer i{
+    padding: .5rem;
+}
+.footer i:hover{
+    color: aliceblue;
+}
+.ham{
+    width: 10rem;
+    position: absolute;
+    height: 8rem;
+    margin: 3rem 0;
+    display: none;
+    top: 10%;
+    left:85%;
+    transform:translate(-70%, -50%);
+    background:linear-gradient(to right, #334d50, #cbcaa5);;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(61, 59, 59, 0.267)
+}
+
+.ham a{
+   display: block;
+   color: white;
+   font-size: 1.7rem;
+   text-transform: capitalize;
+   text-decoration: none;
+    
+}
+
+/* ######################media Quiry############### */
+@media (max-width:900px){
+    html{
+        font-size: 50%;
+    }
+
+}
+
+@media (max-width:650px){
+    .hide,.hide1{
+        display: none;
+        
+    }
+
+    #bar{
+        display: block;
+    }
+   
+
+}
+@media (max-width:1000px){
+    .sec{
+        padding: 2rem;
+    }
+    .label{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .label div{
+        border-radius: 0%;
+        width: 20rem;
+        margin-bottom: 1.5rem;
+    }
+
+}
+@media (max-width:700px){
+    .events{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ev-head{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width:540px){
+
+    .rw-head{
+        flex-direction: column;
+        align-items: center;
+    }
+    .review-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+@media (max-width:400px){
+    .review-container {
+        width: 100%;
+    }
+    .review-container .card{
+        max-width: 90%;
+    }
+    .main-container h1{
+        font-size: 2rem;
+    }
+
+}
+
+/* -------- for rotate mode/land scape mode-------------- */
+@media (orientation:landscape) and (max-height:500px){
+    .head-showcase{
+         height: 50vmax;
+        
+    }
+    .navbar{
+        width: 100%;
+    }
+
+    .ham{
+        margin: 6rem;
+
+    }
+   
+}
+
